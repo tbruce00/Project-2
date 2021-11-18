@@ -1,126 +1,95 @@
-# 15 Project 2: Interactive Full-Stack Application
+# Stick it to em'
+## Introduction:
+We wanted to creat an app where the user is able to interactively plan events as well as meetups together
+in the form of sticky notes. The user can then invite others and find similar events that fit their interest. A safe place where everyone can be friends and hangout!
 
-Projects play a key role in your journey to becoming a full-stack web developer. As you enter the last phase of the boot camp, you’ll begin to apply for development jobs. If you want to land interviews, your portfolio must feature high-quality deployed examples of your work—-and you can use your finished projects for that very purpose.
+A demo for this app that you can view on this link:
+ [Stick it to em'](https://boiling-garden-97737.herokuapp.com/)
 
-As your first opportunity to show employers your collaborative skills and coding abilities, this particular project will be a focal point of your portfolio. Employers want to see what you can do, but they also want to see how you work with other developers. The more examples of deployed collaborative work you have in your portfolio, the more likely you are to get an interview and a job.
+<br>
+<br>
 
-## Project Requirements
 
-You and your group will use everything you’ve learned over the past six units to create a real-world full-stack application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
+## Technologies used:
+* HTML
+* CSS
+* JS
+* Macromedia Fireworks
+* mySql
+* Heroku
+* Handlebars
+* JQuery
+* Notifications API
+<br>
+<br>
 
-* Use Node.js and Express.js to create a RESTful API.
+### Original CSS  Code
+![screenshot](assets/img/CSSthumb.JPG)
 
-* Use Handlebars.js as the template engine.
+<br>
+<br>
 
-* Use MySQL and the Sequelize ORM for the database.
+### Original Java Script Code:
 
-* Have both GET and POST routes for retrieving and adding new data.
+#### Screenshot of models
+![screenshot](assets/img/modelthumb.JPG)
+<br>
+<br>
 
-* Use at least one new library, package, or technology that we haven’t discussed.
+#### Screenshot of controllers
+![screenshot](assets/img/controllerthumb.JPG)
+<br>
+<br>
 
-* Have a folder structure that meets the MVC paradigm.
+#### Screenshot of seeds
+![screenshot](assets/img/seedthumb.JPG)
 
-* Include authentication (express-session and cookies).
+<br>
+<br>
 
-* Protect API keys and sensitive information with environment variables.
+#### Screenshot of schema
+![screenshot](assets/img/schemathumb.JPG)
 
-* Be deployed using Heroku (with data).
+<br>
+<br>
 
-* Have a polished UI.
+#### Screenshot of handlebars
+![screenshot](assets/img/handlebarthumb.JPG)
 
-* Be responsive.
+<br>
+<br>
 
-* Be interactive (i.e., accept and respond to user input).
+#### Screenshots of app 
 
-* Meet good-quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
+![screenshot](assets/img/logo.jpg)
+<br>
+<br>
 
-* Have a professional README (with unique name, description, technologies used, screenshot, and link to deployed application).
+![screenshot](assets/img/landing.JPG)
+<br>
+<br>
 
-## Presentation Requirements
+![screenshot](assets/img/createevent.JPG)
+<br>
+<br>
 
-Use this [project presentation template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing) to address the following: 
+![screenshot](assets/img/newevent.JPG)
+<br>
+<br>
 
-* Elevator pitch: a one minute description of your application
+![screenshot](assets/img/event.JPG)
+<br>
+<br>
 
-* Concept: What is your user story? What was your motivation for development?
+### Contributors
+* Micah S.
+* Ariel M.
+* Trevor B.
+* Eric D.
+* Camden W.
 
-* Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
 
-* Demo: Show your stuff!
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-* Directions for Future Development
 
-* Links to the deployed application and the GitHub repository. Use the [Guide to Deploy with Heroku and MySQL](https://coding-boot-camp.github.io/full-stack/heroku/deploy-with-heroku-and-mysql) on The Full-Stack Blog if you need a reminder on how to deploy to Heroku.
 
-## Grading Requirements
-
-This project is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 25%
-
-* Satisfies the following code requirements:
-
-  * Application uses a Node.js and Express.js back end and uses both GET and POST routes for retrieving and adding new data.
-
-  * Application has a folder structure that meets the MVC paradigm and uses Handlebars.js as the template engine.
-
-  * Application is backed by a MySQL database with a Sequelize ORM and protects API keys and sensitive information with environment variables.
-
-  * Application includes user authentication (express-session and cookies).
-
-  * Application uses at least one new library, package, or technology not covered in class.
-
-### Concept 10%
-
-* Application should be a unique and novel idea.
-
-* Your group should clearly and concisely articulate your project idea.
-
-### Deployment: 20%
-
-* Application deployed at live URL on Heroku and loads with no errors.
-
-* Application GitHub URL submitted.
-
-### Repository Quality: 10%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id-naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application is responsive.
-
-### Presentation 10%
-
-* Your group should present using Powerpoint or a similar presentation software.
-
-* Every group member should speak during the presentation.
-
-* Your presentation should follow the [Project Presentation Template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing).
-
-### Collaboration 10%
-
-* There are no major disparities in the number of GitHub contributions between group members.
-
-## How to Submit Your Interactive Full-Stack Project
-
-**Each member of your group** is required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README describing the project.
-
----
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.

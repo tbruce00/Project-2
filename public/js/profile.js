@@ -2,13 +2,13 @@ const newFormHandler = async (event) => {
   event.preventDefault();
 
   const name = document.querySelector('#project-name').value.trim();
-  const needed_funding = document.querySelector('#project-funding').value.trim();
   const description = document.querySelector('#project-desc').value.trim();
+  const date_created = document.querySelector('#project-date').value.trim();
 
-  if (name && needed_funding && description) {
+  if (name && description && date_created) {
     const response = await fetch(`/api/projects`, {
       method: 'POST',
-      body: JSON.stringify({ name, needed_funding, description }),
+      body: JSON.stringify({ name, description, date_created}),
       headers: {
         'Content-Type': 'application/json',
       },
@@ -16,8 +16,10 @@ const newFormHandler = async (event) => {
 
     if (response.ok) {
       document.location.replace('/profile');
+      const goodNotification = new Notification('Your event has been created successfully!');
+
     } else {
-      alert('Failed to create project');
+      const badNotification = new Notification('Your event could not be created at this time, please check the requirements and try again.');
     }
   }
 };

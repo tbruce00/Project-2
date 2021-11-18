@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/style.css" />
-    <title>Stick It to Em</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stick It To Em</title>
+  <link rel="stylesheet" href="/css/jass.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
-  <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
+  <div class="flex-column">
+    <header class="display-flex justify-space-between align-center p-1" "custom-nav">
       <h1>
-        <span role="img" aria-label="money">💸</span>
-        <a href="/">Fund My Project!</a>
+        {{!-- <span role="img" aria-label="money"></span>
+        <a href="/">Stick It To Em</a> --}}
+        <a class="active" href="/"><img src="./img/keepit.png"></a>
       </h1>
-      <nav>
         <!-- Conditionally render login or logout links -->
+         <nav>
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
-        {{else}}
-        <a href="/login">login</a>
+        <a class="no-button" href="/profile"><img src="./img/account.png"></a> 
+        <a class="no-button" href="/" id="logout"><img src="./img/LOGOUT.png"></a>
+          {{else}}
+        {{!-- <a href="/login">login</a> --}}
+         <a class="custom-font"class="goRight" href="/login"><img src="./img/LOGIN.png"></a>
+         <a class="custom-font"class="goRight" href="/signup"><img src="./img/signup.png"></a>
+       </nav>
         {{/if}}
-      </nav>
     </header>
     <main class="container container-fluid mt-5">
+      <div class="custom-bg" id="bg">
+        <img importance="low" src="./img/corkboard.jpg" alt="bg-image">
+    </div>
+{{#if logged_in}}
+<div class="text-center">
+  </div>
+{{else}}
+    <div class="text-center">
+ <img class= "m-auto d-block" src="./img/sticky2.png" alt="sticky-logo">
+  </div>
+  {{/if}}
+
+
       <!-- Render the sub layout -->
-      {{{ body }}}
+    {{{ body }}}
+   
+    <div class="text-center">
+  </div>
+  
     </main>
     <footer>
       
@@ -39,6 +60,6 @@
   <script src="/js/logout.js"></script>
   {{/if}}
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </html>
+

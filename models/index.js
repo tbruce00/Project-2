@@ -1,23 +1,27 @@
 const User = require('./User');
-const Event = require('./Event');
+const Project = require('./Project');
 const Rsvp = require('./Rsvp');
+const { resolveConfig } = require('prettier');
 
-User.hasMany(Event, {
+User.hasMany(Project, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE'
 });
 
 User.hasMany(Rsvp, {
-  foreignKey: 'user_id',
-  onDelete: 'CASCADE'
-});
+  foreignKey: 'user_id'
+})
 
-Event.belongsTo(User, {
+Project.belongsTo(User, {
   foreignKey: 'user_id'
 });
 
 Rsvp.belongsTo(User, {
-  foreignKey: 'user_id'
+  foreignKey: 'user_id',
 });
 
-module.exports = { User, Event, Rsvp };
+Rsvp.belongsTo(Project, {
+  foreignKey: 'user_id',
+});
+
+module.exports = { User, Project };

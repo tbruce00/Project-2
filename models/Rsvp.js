@@ -5,19 +5,25 @@ class Rsvp extends Model {}
 
 Rsvp.init(
   {
-    name: {
-        type: DataTypes.STRING,
-        allowNull: false,
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
       },
-      email: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        unique: true,
-        validate: {
-        isEmail: true,
     },
+    event_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      defaultValue: 0,
     },
-  },  
+  },
   {
     sequelize,
     timestamps: false,

@@ -1,17 +1,20 @@
 [
   {
-    "name": "Music Near Me",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "needed_funding": 5000
-  },
+    "name": "Bike Ride",
+    "description": "At Big Adventure Park! 5:00pm on the dot be there or be square AHA! P.S Francis isn't allowed.",
+    "rsvp": 12,
+    "date_created": "2021-07-09"
+  },  
   {
-    "name": "The Ultimate Tech Quiz",
-    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
-    "needed_funding": 10000
+    "name": "Larping in the Park",
+    "description": "We are meeting at Washington Park and having a gigantic larp sesh, invite all your friends",
+    "rsvp": 1000000,
+    "date_created": "2021-04-10"
   },
   {
     "name": "Roll 'Em Up",
-    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
-    "needed_funding": 800
+    "description": "Meet up at Hollywood Star Lanes",
+    "rsvp": 5,
+    "date_created": "2021-06-13"
   }
 ]

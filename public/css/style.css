@@ -45,7 +45,7 @@ header li a {
 }
 header li a:hover {
     text-decoration: none;
-    color: white;
+    color: black;
 }
   .custom-nav{
       background-color:transparent;
@@ -55,3 +55,66 @@ header li a:hover {
       color:#9dfe6c;
       -webkit-text-stroke: .75px black;
   } 
+  .project-list {
+    justify-content: center;
+  }
+
+  .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-body {
+    color: antiquewhite;
+  }
+  
+  .card-title {
+    color: black;
+    font-size: larger;
+  }
+
+  .sticky {
+    position: relative;
+    margin: auto;
+  }
+
+  .card {
+    background-color: #559a32;
+    margin-left: 15%;
+    margin-right: 15%;
+    border: 2px solid #0e480e;
+  }
+
+  .card .card-body {
+    padding: 0.0rem;
+    border: 1px 1px 1px black;
+  }
+  .button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: .5s;
+  }
+
+  .button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+
+  /* .bi-people-fill {
+    background-color: black;
+  } */
+
+  .card .home {
+    background-color: #559a32;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 2px solid #0e480e;
+  }
